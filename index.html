@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>git学习</title>
+	<style type="text/css">
+		.box {
+			width: 200px;
+			height: 200px;
+			background: skyblue;
+			margin-top: 10px;
+			border-radius: 50%;
+		}
+
+		button {
+			width: 100px;
+			height: 35px;
+			outline: 0;
+			color: #fff;
+			margin-left: 48px;
+			background: #0aa;
+			border-radius: 5px;
+			display: inline-block;
+			border: 1px solid #ccc;
+
+		}
+	</style>
+</head>
+<body>
+	<button>变色</button>
+	<div class="box"></div>
+</body>
+<script type="text/javascript">
+	var btn = document.querySelector("button");
+	var box = document.querySelector(".box");
+	btn.onmousedown = function(){
+		this.style.backgroundColor = "#088";
+		this.style.color="orange";
+		box.style.backgroundColor = "orange";
+
+	}
+
+	btn.onmouseup = function(){
+		this.style.backgroundColor = "#0aa";
+		this.style.color="#fff";
+		box.style.backgroundColor = "skyblue";
+	}
+</script>
+</html>
